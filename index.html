@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Website Donasi - Detail Campaign</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">PeduliSesama</a>
+            <div class="nav-menu">
+                <a href="#">Beranda</a>
+                <a href="#">Campaign</a>
+                <a href="#" class="btn-login">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        
+        <section class="content-left">
+            <h1 class="campaign-title">Bantu Renovasi Rumah Belajar Anak Pelosok yang Hampir Roboh</h1>
+            
+            <div class="image-placeholder">
+                <p>[ Foto Utama Campaign ]</p>
+            </div>
+
+            <div class="campaign-story">
+                <h3>Cerita Penggalangan Dana</h3>
+                <p>Sudah lebih dari 5 tahun anak-anak di Desa Makmur belajar di bawah atap bocor dan dinding bambu yang mulai rapuh. Ketika angin kencang datang, kegiatan belajar mengajar harus dihentikan demi keselamatan mereka.</p>
+                <p>Mari bersama-sama ulurkan tangan untuk memberikan tempat belajar yang layak, aman, dan nyaman demi masa depan generasi penerus bangsa.</p>
+            </div>
+
+            <div class="comment-section">
+                <h3>Doa & Dukungan Para Donatur (3)</h3>
+                
+                <form class="comment-form" onsubmit="event.preventDefault();">
+                    <input type="text" placeholder="Nama Anda (Kosongkan jika Anonim)">
+                    <textarea placeholder="Tulis doa atau dukungan Anda di sini..." rows="3" required></textarea>
+                    <button type="submit" class="btn-submit-comment">Kirim Doa</button>
+                </form>
+
+                <div class="comment-list">
+                    <div class="comment-item">
+                        <div class="comment-avatar">AH</div>
+                        <div class="comment-body">
+                            <h4>Ahmad Hidayat <span class="donation-amount">• Berdonasi Rp 100.000</span></h4>
+                            <p>Semoga pembangunan berjalan lancar dan anak-anak bisa segera belajar dengan nyaman. Amin.</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item anonymous">
+                        <div class="comment-avatar">A</div>
+                        <div class="comment-body">
+                            <h4>Anonim <span class="donation-amount">• Berdonasi Rp 50.000</span></h4>
+                            <p>Sedikit rezeki semoga berkah dan bermanfaat untuk adik-adik di sana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar-right">
+            <div class="donation-card">
+                <div class="funds-info">
+                    <span class="funds-raised">Rp 45.500.000</span>
+                    <span class="funds-target">dari target Rp 100.000.000</span>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 45%;"></div>
+                </div>
+
+                <div class="campaign-stats">
+                    <div>
+                        <strong>45%</strong>
+                        <p>Terkumpul</p>
+                    </div>
+                    <div>
+                        <strong>120</strong>
+                        <p>Donatur</p>
+                    </div>
+                    <div>
+                        <strong>14</strong>
+                        <p>Hari Lagi</p>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <form class="donation-form" onsubmit="event.preventDefault();">
+                    <label for="amount">Masukkan Nominal Donasi:</label>
+                    <div class="input-group">
+                        <span class="currency">Rp</span>
+                        <input type="number" id="amount" placeholder="Contoh: 50000" min="10000" required>
+                    </div>
+
+                    <button type="submit" class="btn-donate-now">Donasi Sekarang</button>
+                </form>
+            </div>
+        </aside>
+
+    </main>
+
+</body>
+</html>
